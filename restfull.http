@@ -1,0 +1,93 @@
+@Base_Url = http://localhost:5000/api
+
+###
+
+#tüm müşteriler
+GET  {{Base_Url}}/customers
+
+###
+
+#id ye göre müşteri
+GET  {{Base_Url}}/customers/603a9341e2c71316bc187c67
+
+###
+
+#müşteri ekleme
+POST  {{Base_Url}}/customers
+Content-Type: application/json
+
+{
+    "fullName":"Eray Hacıoğlu2",
+    "tel":"0555 555 5557"
+}
+
+###
+
+#id ye göre müşteri güncelleme
+PATCH {{Base_Url}}/customers/603a939937517e2f78f664e8
+Content-Type: application/json
+
+{
+    "fullName":"dsfgdfgdsdgf"
+}
+
+###
+
+#idye göre müşteri silme
+DELETE {{Base_Url}}/customers/603a93a737517e2f78f664e9
+
+###
+
+#tüm kayıtlar
+GET  {{Base_Url}}/records
+
+###
+
+#id ye göre kayıt
+GET  {{Base_Url}}/records/603a9b53917bc41518f4bcb8
+
+###
+
+#yeni kayıt
+POST  {{Base_Url}}/records
+Content-Type: application/json
+
+{
+    "recordNo":"05286456455",
+    "custId":"603a9341e2c71316bc187c68",
+    "deviceType":"Tablet",
+    "deviceBrandModel":"Tab x",
+    "deviceSeriesNo":"iosag457454541548",
+    "deviceWarrant":"2 yıl",
+    "faultInfo":"işlemcisi yanmış",
+    "accessories":"çanta",
+    "serviceOfficer":"Eray Hacıoğlu",
+    "deviceStatus":"Tamirde",
+    "doneTransaction":"ekran değiştirilecek",
+    "totalPrice":"750"
+}
+
+###
+
+#id ye göre kayıt güncelleme
+PATCH  {{Base_Url}}/records/603a9b53917bc41518f4bcb8
+Content-Type: application/json
+
+{
+    "deviceWarrant":"yok"
+}
+
+###
+
+#id ye göre kayıt silme
+DELETE {{Base_Url}}/records/603a9b9b917bc41518f4bcb9
+
+###
+
+#custid ye göre kayıt
+GET {{Base_Url}}/search/records/603a9341e2c71316bc187c67
+
+###
+
+#recordno ya göre kayıt
+GET {{Base_Url}}/search/record/05286456456
