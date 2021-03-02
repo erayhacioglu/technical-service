@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const records = require('./routes/records');
 const customers = require('./routes/customers');
 const search = require('./routes/search');
+const users = require('./routes/users');
 const db = require('./config/db')();
 
 
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use('/api/customers',customers);
 app.use('/api/records',records);
 app.use('/api/search',search);
+app.use('/api/users',users);
 
 //port settigns
 const port = process.env.PORT || 5000;
