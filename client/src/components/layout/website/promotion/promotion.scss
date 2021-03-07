@@ -1,0 +1,73 @@
+#pro-section {
+	width: 100%;
+	height: auto;
+	margin-top: 13vh;
+	padding: 0;
+	.promotion {
+		width: 100%;
+		display: flex;
+		height: 100%;
+		.pro-left {
+			width: 50%;
+			height: 77vh;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			text-align: left;
+			.pro-left-title {
+				color: $fc-1;
+				font-size: $lg-2;
+				text-align: left;
+			}
+			.pro-left-p {
+				color: $fc-2;
+				font-size: 22px;
+				margin: 25px 0;
+			}
+			.teklif-btn {
+				padding: 15px;
+				background: $hover;
+				color: $white;
+				border-radius: 5px;
+				font-size: $md-1;
+				transition: 0.3s linear;
+				&:hover {
+					opacity: 0.85;
+					text-decoration: none;
+				}
+			}
+		}
+		.pro-right {
+			width: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 25px;
+			.pro-right-img {
+				width: 90%;
+				height: 90%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	#pro-section {
+		width: 100%;
+		.promotion {
+			flex-direction: column;
+			.pro-left {
+				width: 100%;
+				height: auto;
+				padding: 20px 0;
+			}
+			.pro-right {
+				width: 100%;
+				.pro-right-img {
+					height: 250px;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+}

@@ -1,3 +1,15 @@
 @import './bootstrap_overrides.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import './style.scss';
+@import '../components/layout/website/about/about.scss';
+@import '../components/layout/website/contact/contact.scss';
+@import '../components/layout/website/footer/footer.scss';
+@import '../components/layout/website/header/header.scss';
+@import '../components/layout/website/map/map.scss';
+@import '../components/layout/website/marquee/marquee.scss';
+@import '../components/layout/website/promotion/promotion.scss';
+@import '../components/layout/website/search-result/search-result.scss';
+@import '../components/layout/website/search/search.scss';
+@import '../components/layout/website/services/service.scss';
+@import '../components/layout/website/slogan/slogan.scss';
+@import '../components/layout/website/notfound/notfound.scss';
